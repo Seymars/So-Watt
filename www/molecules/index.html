@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Slider</h1>
+
+    <section class="slider">
+      <div class="slider__arrow slider__arrow--left">&larr;</div>
+      <div class="slider__arrow slider__arrow--right">&rarr;</div>
+
+
+      <div class="slide" data-menu="0">
+        <h2>Slide par défaut</h2>
+        <p>Je suis la slide par défaut (non sélectionnable via les menus)</p>
+      </div>
+
+      <div class="slide slide--is-selected" data-menu="1">
+        <h2>Slide 1</h2>
+        <p>Slide par défaut mais j'appartiens au menu 1</p>
+      </div>
+
+      <div class="slide" data-menu="1">
+        <h2>Slide 2</h2>
+        <p>J'appartiens au menu 1</p>
+      </div>
+
+      <div class="slide" data-menu="2">
+        <h2>Slide 3</h2>
+        <p>J'appartiens au menu 2</p>
+      </div>
+
+      <div class="slide" data-menu="1">
+        <h2>Slide 4</h2>
+        <p>J'appartiens au menu 1</p>
+      </div>
+
+      <div class="slide" data-menu="1">
+        <h2>Slide 5</h2>
+        <p>J'appartiens au menu 1</p>
+      </div>
+
+      <div class="slide" data-menu="3">
+        <h2>Slide 6</h2>
+        <p>J'appartiens au menu 3</p>
+      </div>
+
+      <div class="slide" data-menu="3">
+        <h2>Slide 7</h2>
+        <p>J'appartiens au menu 3</p>
+      </div>
+
+      <div class="slide" data-menu="2">
+        <h2>Slide 8</h2>
+        <p>J'appartiens au menu 2</p>
+      </div>
+    </section>
+
+
+    <section class="controls">
+      <p class="controls__btn" data-menu="1">Menu 1</p>
+      <p class="controls__btn" data-menu="2">Menu 2</p>
+      <p class="controls__btn" data-menu="3">Menu 3</p>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

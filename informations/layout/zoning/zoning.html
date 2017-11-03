@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoning</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-rows: 20vh 1fr 15vh;
+            min-height: 100vh;
+        }
+        header {
+            background-color: blue;
+            text-align: center;
+            grid-row: 1 / 2;
+        }
+        footer {
+            background-color: grey;
+            grid-row: 3 / 4;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 25vw 1fr 25vw;
+            grid-template-rows: 1fr 25% 25% 25%;
+        }
+        #content {
+            background-color: green;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+        #b1 {
+            background-color: red;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        #imaage {
+            background-color: black;
+            grid-column: 2 / 3;
+            grid-row: 2 / 4;
+        }
+        #b2 {
+            background-color: yellow;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        #b3 {
+            background-color: orange;
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        #b4 {
+            background-color: purple;
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        #b5 {
+            background-color: pink;
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+    </style>
+</head>
+<body>
+    <header>Titre</header>
+    <main>
+        <section id="content">Contenu</section>
+        <section id="b1">Bulle 1</section>
+        <section id="b2">Bulle 2</section>
+        <section id="b3">Bulle 3</section>
+        <section id="b4">Bulle 4</section>
+        <section id="b5">Bulle 5</section>
+        <section id="imaage">Image</section>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
